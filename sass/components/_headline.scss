@@ -1,0 +1,18 @@
+.headline {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+
+  &::before {
+    content: "/";
+    font-size: 32px;
+    color: $grey-400;
+    padding-right: 5px;
+    position: absolute;
+    top: -8px;
+    left: -5px;
+  }
+  @include breakpoint(medium) {
+  }
+}

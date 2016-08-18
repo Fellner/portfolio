@@ -1,0 +1,21 @@
+.intro {
+  padding: 160px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desc {
+    max-width: 49%;
+  }
+
+  &__pic {
+    $size: 280px;
+    max-width: 49%;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+  }
+}

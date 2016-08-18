@@ -1,0 +1,39 @@
+.container {
+
+  &--bg {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    &:before {
+      content: " ";
+      $offset: 60px;
+
+      position: absolute;
+      background-color: $grey-300;
+      z-index: -1;
+      height: calc(100% - #{$offset * 2});
+      width: 200%;
+      height: 100%;
+      top: $offset;
+      left: -50%;
+      transform-origin: center;
+      transform: rotate(-3deg);
+      overflow: hidden;
+    }
+  }
+
+  @include breakpoint(medium) {
+  }
+
+  &__inner {
+    max-width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: auto;
+    width: 700px;
+
+    @include breakpoint(large) {
+      max-width: 100%;
+    }
+  }
+}
