@@ -1,5 +1,13 @@
 $white: #ffffff;
-$grey-300: #f1f1f2;
-$grey-400: #d1d3d2;
-$grey-500: #3c3c3b;
-$grey-600: #575756;
+$green: #d0dbcc;
+
+$green-300: darken($green, 30%);
+$green-700: darken($green, 70%);
+$green-800: darken($green, 80%);
+
+$color-background: rgba(208, 219, 204, 0.5);
+$color-detail: $green;
+$color-title: $green-700;
+$color-subtitle: $green-300;
+$color-headline: $green-700;
+$color-text: $green-800;

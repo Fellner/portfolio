@@ -1,21 +1,43 @@
 .intro {
-  padding: 160px 0;
+  padding: 48px 0 80px;
+
+  @include breakpoint(medium) {
+    padding: 160px 0;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
   }
 
   &__desc {
-    max-width: 49%;
+
+    @include breakpoint(medium) {
+      max-width: 49%;
+    }
   }
 
   &__pic {
-    $size: 280px;
-    max-width: 49%;
-    border-radius: 50%;
+    $size: 240px;
+    position: relative;
     width: $size;
-    height: $size;
+    max-width: 100%;
+    margin-bottom: 50px;
+    // box-shadow: -16px 16px 0px 4px $color-background;
+    height: auto;
+    border-radius: 50%;
+
+    @include breakpoint(medium) {
+      max-width: 49%;
+      margin-bottom: 0;
+      // box-shadow: 16px 16px 0px 4px $color-background;
+    }
   }
 }

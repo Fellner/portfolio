@@ -1,29 +1,32 @@
-@import 'https://fonts.googleapis.com/css?family=Cabin:400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Cabin:400,600';
 
 body {
   font-family: 'Cabin', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-@mixin font-headline-inverted {
-
-}
-
-@mixin font-headline {
-
-}
-
-@mixin font-headline-large {
+@mixin font-title {
+  font-size: 32px;
+  line-height: 48px;
+  color: $color-title;
 }
 
 @mixin font-subtitle {
-
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $color-subtitle;
 }
 
-@mixin font-subtitle-large {
+@mixin font-headline {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $color-headline;
 }
 
-@mixin font-paragraph {
-}
-
-@mixin font-paragraph-inverted {
+@mixin font-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text;
 }

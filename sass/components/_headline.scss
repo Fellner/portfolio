@@ -1,18 +1,20 @@
 .headline {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  @include font-headline;
   position: relative;
 
-  &::before {
-    content: "/";
-    font-size: 32px;
-    color: $grey-400;
-    padding-right: 5px;
-    position: absolute;
-    top: -8px;
-    left: -5px;
+  &::after {
+    $size: 8px;
+    content: "";
+    width: $size;
+    height: $size;
+    margin-left: $size;
+    background-color: $color-detail;
+    background-size: $size;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 50%;
   }
+
   @include breakpoint(medium) {
   }
 }

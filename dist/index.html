@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
 <head>
-<title>Barbara Fellner</title>
-<link rel="stylesheet" href="./dist/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./main.css">
+  <title>Barbara Fellner</title>
 </head>
 
 <body>
-  <section class="container">
-    <div class="container__inner introduction">
-      <div class="introduction__desc">
-        <h1>Barbara Fellner</h1>
-        <h2>Frontend Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime est, incidunt laudantium dolorum dolorem perferendis velit distinctio accusantium atque fugit minima corporis molestias, minus perspiciatis impedit quis deserunt animi nemo.</p>
+
+  <section class="container intro">
+    <div class="container__inner intro__inner">
+      <div class="intro__desc">
+        <h1 class="title">Barbara Fellner</h1>
+        <h2 class="subtitle">Frontend Developer</h2>
+        <p class="text">Ich bin eine enthusiastische Frontend-Entwicklerin aus Oberösterreich, die sich auch gerne Gedanken über UX und UI Design macht.</p>
       </div>
-      <div class="portrait">
-        <img src="assets/portrait.jpg" alt="Barbara Fellner">
-      </div>
+      <img class="intro__pic" src="assets/portrait.png" alt="Barbara Fellner">
     </div>
   </section>
+
+<section>
+  <div class="container">
+    <div class="container__inner">
+      <h2 class="headline">Projekte</h2>
+      <p class="text">Folgende Projekte habe ich während meiner Zeit bei <a class="a" href="http://www.friday.ie/" target="_blank">Friday Digital Agency</a> entwickelt.</p>
+    </div>
+  </div>
+
+  <div class="container container--bg">
+    <div class="container__inner projects">
+      <a href="http://www.stpatrickscathedral.ie/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-1.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">St. Patrickscathedral</h3>
+          <p class="project__desc">Die Online-Heimat von Dublin's 2. beliebtester Touristenattraktion. Mit integriertem Shop, online Kalender und Ticketsysten.</p>
+        </div>
+      </a>
+      <a href="http://lion.friday.ie/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-6.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">Lion</h3>
+          <p class="project__desc">Lion ist eins der größten Versicherungsinstitute in Irland. Spannend war für mich bei diesem Projekt die Interaktion mit der Backend API.</p>
+        </div>
+      </a>
+      <a href="https://cookbook-a425b.firebaseapp.com/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-4.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">Cookbook</h3>
+          <p class="project__desc">Eine kleine Single Page App die ich mit React umgesetzt habe. Die App läuft sogar offline nach dem ersten Besuch.</p>
+        </div>
+      </a>
+      <a href="http://huddlehub.co/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-3.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">HuddleHub</h3>
+          <p class="project__desc">Ein Startup bei dem jeder Geld verdienen kann indem Fragebogen ausgefüllt werden. Ohne dass der User die Schnittstelle zur Fragebogen Software merkt.</p>
+        </div>
+      </a>
+      <a href="http://thebabybox.com/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-5.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">TheBabyBox</h3>
+          <p class="project__desc">Inspiriert durch eine 80 Jahre alte Finishe Tradition. The Baby Box. Gebaut wurde hier ein Shop, welcher an die ganze Welt liefert.</p>
+        </div>
+      </a>
+      <a href="http://platinum.friday.ie/" target="_blank" class="project">
+        <div class="project__pic" style="background-image: url('assets/project-2.png')"></div>
+        <div class="project__text">
+          <h3 class="project__title">Platinum</h3>
+          <p class="project__desc">Eventorganisatoren mit renommierten Kunden. Umgesetzt wurde diese Seite mit Wordpress.</p>
+        </div>
+      </a>
+      <div class="project"></div>
+      <div class="project"></div>
+    </div>
+  </div>
+</section>
+
+<section class="container contact">
+    <h2 class="container__inner headline">Kontakt</h2>
+    <div class="container__inner">
+      <p class="text">Du hast ein cooles Projekt im Kopf und glaubst ich kann dir damit helfen? Super, <a class="a" href="mailto:hallo@barbarafellner.at">schreib mir!</a></p>
+
+      <div class="social">
+        <a href="https://github.com/Fellner" target="_blank"><img src="assets/social-github.svg" alt="Github" class="social__icon"></a>
+        <a href="https://twitter.com/barbarafellner" target="_blank"><img src="assets/social-twitter.svg" alt="Twitter" class="social__icon"></a>
+        <a href="https://www.linkedin.com/in/barbara-fellner-13797a6b" target="_blank"><img src="assets/social-linkedin.svg" alt="Linkedin" class="social__icon"></a>
+        <a href="https://www.xing.com/profile/Barbara_Fellner2" target="_blank"><img src="assets/social-xing.svg" alt="Xing" class="social__icon"></a>
+        <a href="mailto:hallo@barbarafellner.at" target="_blank"><img src="assets/social-mail.svg" alt="Mail" class="social__icon"></a>
+      </div>
+
+    </div>
+</section>
+
 </body>
 
 </html>

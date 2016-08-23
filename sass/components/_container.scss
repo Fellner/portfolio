@@ -2,23 +2,20 @@
 
   &--bg {
     position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
 
     &:before {
       content: " ";
-      $offset: 60px;
+      $offset: 140px;
 
       position: absolute;
-      background-color: $grey-300;
+      background-color: $color-background;
       z-index: -1;
-      height: calc(100% - #{$offset * 2});
+      height: calc(100% - #{$offset / 4 * 3});
       width: 200%;
-      height: 100%;
       top: $offset;
       left: -50%;
       transform-origin: center;
-      transform: rotate(-3deg);
+      transform: rotate(-8deg);
       overflow: hidden;
     }
   }
@@ -30,7 +27,7 @@
     max-width: calc(100% - 40px);
     padding: 0 20px;
     margin: auto;
-    width: 700px;
+    width: 720px;
 
     @include breakpoint(large) {
       max-width: 100%;
