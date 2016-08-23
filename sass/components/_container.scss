@@ -2,6 +2,13 @@
 
   &--bg {
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @include breakpoint(medium) {
+      overflow-x: visible;
+      overflow-y: visible;
+    }
 
     &:before {
       content: " ";
@@ -20,17 +27,14 @@
     }
   }
 
-  @include breakpoint(medium) {
-  }
-
   &__inner {
     max-width: calc(100% - 40px);
     padding: 0 20px;
     margin: auto;
-    width: 720px;
 
     @include breakpoint(large) {
       max-width: 100%;
+      width: 720px;
     }
   }
 }

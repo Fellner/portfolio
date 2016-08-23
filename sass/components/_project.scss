@@ -11,6 +11,7 @@
   &:hover {
     transform: scale(1.03);
     transition: all 150ms ease-out;
+    @include shadow-elevation-2;
   }
 
   &:empty {
